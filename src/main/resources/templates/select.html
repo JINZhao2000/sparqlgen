@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SPARQL TYPE</title>
+    <link th:href="@{/css/lib/bootstrap.css}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+                <a href="/" class="ui-button">Home</a>
+            </div>
+            <form action="/select" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label class="form-text">RDF File: <input type="file" name="rdf" class="form-control-file" required></label>
+                </div>
+                <div class="form-group">
+                    <label class="form-text">Detail File: <input type="file" name="conf" class="form-control-file"></label>
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-primary" type="submit">
+                </div>
+            </form>
+            <div><p th:utext="${msg}"></p></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

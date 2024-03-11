@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#">
+  <dcat:Distribution rdf:about="http://data.europa.eu/88u/distribution/ac481e2a-e187-4e92-8c6a-ccd3c6109466">
+    <dct:title xml:lang="ro-t-en-t0-mtec">BNB Cărți RDF/XML</dct:title>
+    <dct:title xml:lang="bg-t-en-t0-mtec">BNB Книги RDF/XML</dct:title>
+    <dct:title xml:lang="sv-t-en-t0-mtec">BNB Böcker RDF/XML</dct:title>
+    <dct:title xml:lang="de-t-en-t0-mtec">BNB Bücher RDF/XML</dct:title>
+    <dct:title xml:lang="fr-t-en-t0-mtec">BNB Livres RDF/XML</dct:title>
+    <dct:title xml:lang="lv-t-en-t0-mtec">BNB Grāmatas RDF/XML</dct:title>
+    <dct:title xml:lang="es-t-en-t0-mtec">Donde se concedieron licencias, hay campos de nombre y dirección, información sobre el licenciatario y el operador, fechas de expedición y entrega de licencias, fechas de entrada primera y última y tipos de residuos, junto con algunos comentarios históricos.</dct:title>
+    <dct:title xml:lang="hu-t-en-t0-mtec">BNB Könyvek RDF/XML</dct:title>
+    <dct:title xml:lang="pt-t-en-t0-mtec">BNB Livros RDF/XML</dct:title>
+    <dct:title xml:lang="lt-t-en-t0-mtec">BNB Knygos RDF/XML</dct:title>
+    <dct:title xml:lang="it-t-en-t0-mtec">I produttori di rifiuti pericolosi sono tenuti a registrarsi presso di noi e il sito in cui i rifiuti sono smaltiti o recuperati è tenuto a comunicarci i dettagli dei rifiuti che ricevono.</dct:title>
+    <dct:title xml:lang="pl-t-en-t0-mtec">BNB Książki RDF/XML</dct:title>
+    <dct:title xml:lang="nl-t-en-t0-mtec">BNB Boeken RDF/XML</dct:title>
+    <dct:title xml:lang="fi-t-en-t0-mtec">BNB Kirjat RDF/XML</dct:title>
+    <dct:title xml:lang="ga-t-en-t0-mtec">BNB Leabhair RDF/XML</dct:title>
+    <dct:license>
+      <dct:LicenseDocument rdf:about="http://www.opendefinition.org/licenses/cc-zero">
+        <dct:identifier>cc-zero</dct:identifier>
+        <dct:title>Creative Commons CCZero</dct:title>
+      </dct:LicenseDocument>
+    </dct:license>
+    <dct:title xml:lang="et-t-en-t0-mtec">BNB Raamatud RDF/XML</dct:title>
+    <dct:title xml:lang="el-t-en-t0-mtec">BNB Βιβλία RDF/XML</dct:title>
+    <dct:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/RDF"/>
+    <dct:title xml:lang="uk-t-en-t0-mtec">BNB Книги RDF / XML</dct:title>
+    <dct:title xml:lang="en">BNB Books RDF/XML</dct:title>
+    <dct:title xml:lang="cs-t-en-t0-mtec">BNB Knihy RDF/XML</dct:title>
+    <dct:title xml:lang="sk-t-en-t0-mtec">BNB Knihy RDF/XML</dct:title>
+    <dct:title xml:lang="da-t-en-t0-mtec">BNB Bøger RDF/XML</dct:title>
+    <dcat:accessURL rdf:resource="https://www.bl.uk/bibliographic/downloads/BNBLODBooks_202308_rdf.zip"/>
+    <dct:identifier>4f278a83-c98c-416a-be5b-047871ff2a44</dct:identifier>
+    <dct:title xml:lang="mt-t-en-t0-mtec">BNB Kotba RDF/XML</dct:title>
+    <dct:title xml:lang="hr-t-en-t0-mtec">BNB Knjige RDF/XML</dct:title>
+    <dct:title xml:lang="sl-t-en-t0-mtec">BNB Knjige RDF/XML</dct:title>
+  </dcat:Distribution>
+</rdf:RDF>

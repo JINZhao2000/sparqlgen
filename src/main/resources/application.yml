@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+#  neo4j:
+#    uri: bolt://172.17.0.2:7687
+  main:
+    banner-mode: off
+  profiles:
+    active: default
+
+logging:
+  level:
+    web: DEBUG

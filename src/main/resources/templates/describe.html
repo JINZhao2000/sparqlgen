@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SPARQL TYPE</title>
+    <link th:href="@{/css/lib/bootstrap.css}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+                <a href="/" class="ui-button">Home</a>
+            </div>
+            <form action="/describe/generate" method="get">
+                <div class="form-group">
+                    <label class="form-text">
+                        URI:
+                        <input class="form-control" type="text" name="uri">
+                    </label>
+                </div>
+                <input class="btn btn-primary" type="submit" value="Generate">
+                <div><p th:text="${msg}"></p></div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

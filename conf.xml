@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<conf>
+    <selects>
+        <select>
+            <type>p</type>
+            <name>http://purl.org/dc/terms/title</name>
+        </select>
+    </selects>
+    <order>
+        <name>http://purl.org/dc/terms/title1</name>
+    </order>
+    <descorder>
+        <name>http://purl.org/dc/terms/title</name>
+    </descorder>
+    <limit>-1</limit>
+    <offset>-1</offset>
+</conf>
