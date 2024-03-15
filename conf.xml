@@ -2,15 +2,15 @@
 <conf>
     <selects>
         <select>
-            <type>p</type>
-            <name>http://purl.org/dc/terms/title</name>
+            <subject>A</subject>
+            <predicate>title</predicate>
+            <object>Any</object>
         </select>
     </selects>
     <order>
-        <name>http://purl.org/dc/terms/title1</name>
     </order>
     <descorder>
-        <name>http://purl.org/dc/terms/title</name>
+        <name>A</name>
     </descorder>
     <limit>-1</limit>
     <offset>-1</offset>

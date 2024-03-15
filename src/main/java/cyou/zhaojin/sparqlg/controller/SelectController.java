@@ -29,12 +29,15 @@ public class SelectController {
 
     @PostMapping("/select")
     public String selectForm(@RequestParam("rdf")MultipartFile rdf, @RequestParam("conf") MultipartFile conf, Model model) {
-        if (rdf.isEmpty()) {
+        if (rdf.isEmpty() && conf.isEmpty()) {
             model.addAttribute("msg", "File is empty");
             return "select";
         }
         try {
-            RDFGraph graph = RDFUtils.load(rdf.getInputStream());
+            RDFGraph graph = null;
+            if (!rdf.isEmpty()) {
+                graph = RDFUtils.load(rdf.getInputStream());
+            }
             if (conf.isEmpty()) {
                 model.addAttribute("msg", selectService.selectWithoutConf(graph));
                 return "select";

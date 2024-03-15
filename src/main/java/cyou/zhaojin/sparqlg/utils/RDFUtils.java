@@ -3,7 +3,7 @@ package cyou.zhaojin.sparqlg.utils;
 import cyou.zhaojin.sparqlg.bean.RDFGraph;
 import cyou.zhaojin.sparqlg.bean.SelectConf;
 import cyou.zhaojin.sparqlg.bean.Triple;
-import cyou.zhaojin.sparqlg.bean.Variable;
+import cyou.zhaojin.sparqlg.bean.TripleText;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
@@ -39,7 +39,7 @@ public class RDFUtils {
         NodeList selectList = doc.getElementsByTagName("select");
         for (int i = 0; i < selectList.getLength(); i++) {
             Element e = (Element) selectList.item(i);
-            conf.addSelect(new Variable(e.getElementsByTagName("type").item(0).getTextContent(), e.getElementsByTagName("name").item(0).getTextContent()));
+            conf.addSelect(new TripleText(e.getElementsByTagName("subject").item(0).getTextContent(), e.getElementsByTagName("predicate").item(0).getTextContent(), e.getElementsByTagName("object").item(0).getTextContent()));
         }
         Element order = (Element) doc.getElementsByTagName("order").item(0);
         NodeList orderList = order.getElementsByTagName("name");

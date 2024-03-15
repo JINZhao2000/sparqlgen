@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Set;
 
 public class SelectConf {
-    private List<Variable> selects;
+    private List<TripleText> selects;
     private Set<String> orders;
     private Set<String> descorders;
     private String limit;
@@ -18,25 +18,19 @@ public class SelectConf {
         descorders = new HashSet<>();
     }
 
-    public boolean addSelect(Variable variable) {
-        return selects.add(variable);
+    public boolean addSelect(TripleText tripleText) {
+        return selects.add(tripleText);
     }
 
     public boolean addOrder(String order) {
-        if (!hasVariable(order)) {
-            return false;
-        }
         return orders.add(order);
     }
 
     public boolean addDescorder(String descorder) {
-        if (orders.contains(descorder) || !hasVariable(descorder)) {
-            return false;
-        }
         return descorders.add(descorder);
     }
 
-    public List<Variable> getSelects() {
+    public List<TripleText> getSelects() {
         return selects;
     }
 
@@ -62,15 +56,6 @@ public class SelectConf {
 
     public void setOffset(String offset) {
         this.offset = offset;
-    }
-
-    public boolean hasVariable(String order) {
-        for (Variable v : selects) {
-            if (v.getName().equals(order)) {
-                return true;
-            }
-        }
-        return false;
     }
 
     @Override
